@@ -4,6 +4,7 @@ on: [workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-22.04
+    timeout-minutes: 120
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -21,7 +22,6 @@ jobs:
           
       - name: Build APK
         run: |
-          export P4A_NUMPY_VERSION="1.26.4"
           buildozer android debug
           
       - name: Upload APK
