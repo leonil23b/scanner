@@ -28,6 +28,8 @@ jobs:
           pip install --upgrade buildozer "cython==0.29.36" virtualenv
 
       - name: Build APK
+        env:
+          P4A_NUMPY_VERSION: "1.24.4"
         run: |
           buildozer -v android debug
 
