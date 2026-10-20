@@ -11,7 +11,7 @@ source.include_patterns = sound/*
 version = 1.0
 
 # opencv + numpy are built from source by python-for-android (slow first build)
-requirements = python3,kivy==2.3.0,numpy,opencv,pyjnius,android
+requirements = python3,kivy,pillow,pyzbar,pyjnius,android
 
 orientation = portrait
 fullscreen = 0
@@ -23,7 +23,7 @@ android.permissions = CAMERA,VIBRATE
 android.api = 33
 android.minapi = 26
 android.ndk = 25b
-android.archs = arm64-v8a, armeabi-v7a
+android.archs = arm64-v8a
 
 android.accept_sdk_license = True
 android.debug_artifact = apk
