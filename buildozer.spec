@@ -11,7 +11,7 @@ source.include_patterns = sound/*
 version = 1.0
 
 # opencv + numpy are built from source by python-for-android (slow first build)
-requirements = python3,kivy,pillow,pyzbar,pyjnius,android
+requirements = python3,kivy,numpy,opencv,pyjnius,android
 
 orientation = portrait
 fullscreen = 0
